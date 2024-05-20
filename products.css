@@ -1,0 +1,145 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.category {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px;
+  width: calc(33.33% - 20px);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 100px;
+}
+
+
+
+.category:hover {
+  box-shadow: 0px 0px 10px rgb(6, 6, 6);
+}
+
+.category:active {
+  box-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+
+.category h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.category ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.category ul li {
+  padding: 5px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.category ul li:last-child {
+  border-bottom: none;
+}
+
+h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+}
+
+section {
+  padding: 50px 0;
+}
+
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center; 
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+    flex-direction: column;
+  }
+
+  .category {
+    width: calc(100% - 40px);
+    margin-top: 20px;
+  }
+
+  nav ul li {
+    margin-bottom: 5px;
+  }
+
+  header {
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  .container {
+    position: static;
+    z-index: auto;
+  }
+
+  .category {
+    position: static;
+    z-index: auto;
+    margin-top: 140px;
+  }
+}

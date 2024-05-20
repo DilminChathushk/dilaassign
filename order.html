@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FRESHCART</title>
+  <link rel="stylesheet" href="order.css">
+</head>
+<body>
+  <header>
+        <div class="container">
+          <h1>FRESHCART</h1>
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="order.html">Order</a></li>
+              <li><a href="register.html">Log In</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      
+      
+      <main>
+        <h1><center>ORDER FORM</center></h1>
+        <form action="checkout.html" method="post">
+          <label for="product">Select Product:</label>
+          <select name="product" id="product">
+              <option value="lipstick">Lipstick - $12.99</option>
+              <option value="mascara">Mascara - $9.99</option>
+              <option value="cleanser">Facial Cleanser - $14.99</option>
+              <option value="milk">Milk - $2.99 per liter</option>
+              <option value="cheese">Cheese - Starting from $4.99 per 100g</option>
+              <option value="yogurt">Yogurt - Starting from $1.49 per 150g</option>
+              <option value="Carrots">Carrots - $2.99/lb</option>
+              <option value="Spinach">Spinach - $3.49/bunch</option>
+              <option value="tomatoes">Tomatoes - $1.99/lb</option>
+              <option value="Broccoli">Broccoli - $1.79/lb</option>
+              <option value="bell Peppers">Bell Peppers - $0.99/each</option>
+              <option value="Cucumbers">Cucumbers - $0.79/each</option>
+          </select>
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity" name="quantity" min="1" value="1">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="address">Address:</label>
+          <textarea id="address" name="address" rows="4" required></textarea>
+          <button type="submit">Add to Cart</button>
+      </form>
+      </main>
+    
+      <section id="home">
+      </section>
+      <footer>
+        <div class="container">
+            <p>&copy; 2024 FreshCart. All rights reserved.</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

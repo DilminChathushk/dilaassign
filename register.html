@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FRESHCART</title>
+  <link rel="stylesheet" href="register.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>FRESHCART</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="order.html">Order</a></li>
+          <li><a href="register.html">Log In</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+
+  <section id="home">
+
+  </section>
+  <section id="registration">
+    <div class="container">
+      <div class="form-container">
+      <h2>Loyalty Program Registration</h2>
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+          <label for="loyalty">Select Loyalty Scheme:</label>
+          <select id="loyalty" name="loyalty" required>
+            <option value="basic">Basic</option>
+            <option value="silver">Silver</option>
+            <option value="gold">Gold</option>
+          </select>
+        </div>
+        <div class="loyalty-benefits">
+          <h3>Loyalty Scheme Benefits:</h3>
+          <div id="basic-benefits" class="loyalty-benefit">
+            <h4>Basic Scheme</h4>
+            <ul>
+              <li>10% discount on every purchase</li>
+              <li>Exclusive offers and promotions</li>
+            </ul>
+          </div>
+          <div id="silver-benefits" class="loyalty-benefit">
+            <h4>Silver Scheme</h4>
+            <ul>
+              <li>15% discount on every purchase</li>
+              <li>Free home delivery</li>
+            </ul>
+          </div>
+          <div id="gold-benefits" class="loyalty-benefit">
+            <h4>Gold Scheme</h4>
+            <ul>
+              <li>20% discount on every purchase</li>
+              <li>Personal shopper service</li>
+              <li>Invitations to exclusive events</li>
+            </ul>
+          </div>
+        </div>
+        <div class="form-group">
+          <input type="register" value="Register">
+        </div>
+      </form>
+    </div>
+  </div>
+  </section>
+  </main>
+  <footer>
+    <div class="container">
+        <p>&copy; 2024 FreshCart. All rights reserved.</p>
+    </div>
+</footer>
+</body>
+</html>
